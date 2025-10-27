@@ -79,5 +79,3 @@ const password = ref('');
 
 
 </style>
-git config --global user.name "hibojoq22"
-git config --global user.email "hibojoq22@cit.just.edu.jo"
