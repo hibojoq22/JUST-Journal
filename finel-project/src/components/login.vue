@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import axios from 'axios';
+import signup from './signup.vue';
 const email = ref('');
 const password = ref('');
 
@@ -25,7 +28,7 @@ const password = ref('');
     </div>
     
 
-
+<signup />
 </template>
 <style scoped>
 .login-container {
@@ -67,7 +70,6 @@ const password = ref('');
 }
 .signup, .forgot-password {
     text-align: center;
-    margin-top: 10px;
 }
 .signup a, .forgot-password a {
     color: #007bff;
