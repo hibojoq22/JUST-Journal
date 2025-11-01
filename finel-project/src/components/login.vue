@@ -1,11 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
 import axios from 'axios';
-import signup from './signup.vue';
 const email = ref('');
 const password = ref('');
-
 </script>
 <template>
     <div class="login-container">
@@ -19,16 +16,13 @@ const password = ref('');
 
             <button type="submit">Login</button>
             <div class="signup">
-                <p>Don't have an account? <a href="#">Sign up</a></p>
+                <p>Don't have an account? <router-link to="/signup">Sign up</router-link></p>
             </div>
             <div class="forgot-password">
                 <p><a href="#">Forgot Password</a></p>
             </div>
         </form>
     </div>
-    
-
-<signup />
 </template>
 <style scoped>
 .login-container {

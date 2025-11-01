@@ -1,10 +1,9 @@
 <script setup>
-import { ref } from 'vue';
-import login from './components/login.vue';
+// App shell — routes are rendered inside <router-view />
 </script>
+
 <template>
-<login />
-<>
+	<router-view />
 </template>
 
 <style scoped>
