@@ -19,7 +19,7 @@ const password = ref('');
                 <p>Don't have an account? <router-link to="/signup">Sign up</router-link></p>
             </div>
             <div class="forgot-password">
-                <p><a href="#">Forgot Password</a></p>
+                <p><router-link to="/forgot-password">Forgot Password ?</router-link></p>
             </div>
         </form>
     </div>

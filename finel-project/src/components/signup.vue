@@ -15,7 +15,7 @@
 
             <button type="submit">Sign Up</button>
             <div class="login-link">
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <p>Already have an account? <router-link to="/login">Log in</router-link></p>
             </div>
         </form>
     </div>
